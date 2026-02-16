@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>WL Face AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">WL FACE AI</div>
+  <div>
+    <a href="login.html" class="btn-outline">Login</a>
+    <a href="#plans" class="btn-solid">Começar agora</a>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="badge">Plataforma Profissional de IA</span>
+  <h1>Tudo em um só lugar</h1>
+  <p>Transforme imagens com IA ou controle motion de vídeos com tecnologia avançada.</p>
+  <button onclick="scrollToTools()" class="cta">Começar agora →</button>
+</section>
+
+<section class="tools" id="tools">
+  <div class="card">
+    <h2>Transformação de Imagem</h2>
+    <p>Envie uma imagem, escreva um prompt e gere uma nova versão com IA.</p>
+    <button onclick="openNano()">Acessar</button>
+  </div>
+
+  <div class="card">
+    <h2>WL Motion Control</h2>
+    <p>Envie seu vídeo e aplique motion avançado com nossa IA.</p>
+    <button onclick="openMotion()">Acessar</button>
+  </div>
+</section>
+
+<section id="plans" class="pricing">
+  <h2>Plano Premium</h2>
+  <p>Acesso completo por R$ 29,90</p>
+  <button onclick="showPix()">Pagar com PIX</button>
+
+  <div id="pixArea" class="hidden">
+    <p>Chave PIX:</p>
+    <strong>bed9df57-ea86-4555-9217-5cba1a627bbb</strong>
+    <br><br>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=bed9df57-ea86-4555-9217-5cba1a627bbb">
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 WL Face AI</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
